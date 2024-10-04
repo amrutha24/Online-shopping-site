@@ -1,0 +1,108 @@
+<%@page import="com.demo.ConnectionProvider" %> 
+<%@page import="java.sql.*"%>
+<%@include file="adminHeader.jsp" %>
+<%@include file="../footer.jsp" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/addNew.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h3
+{
+	color: yellow;
+	text-align: center;
+}
+
+body {
+    background-color: #CADCFC; /* Set a light gray background for the body */
+}
+
+table {
+ 	border: 2px  black;
+    width: 100%;
+    border-collapse:separate;
+    margin-top: 20px; /* Add some margin above the table */
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th , tr{
+    background-color: white; /* Light gray background for table headers */
+}
+tr
+/*
+tbody tr:nth-child(even) {
+    background-color: #e1e1e1;  Alternate row background color 
+}*/
+
+.fa {
+    font-size: 18px; /* Adjust font size for font-awesome icons */
+    margin-right: 5px; /* Add some margin-right for better spacing with text */
+}
+
+.alert {
+    padding: 10px;
+    /*background-color: #f44336;  Red background for alerts */
+    color: white;
+    text-align: center;
+    margin-bottom: 15px; /* Add margin at the bottom of alerts */
+}
+
+</style>
+</head>
+<body>
+<div style="color: black; text-align: center; font-size: 30px;">Messages Received <i class='fas fa-comment-alt'></i></div>
+<table>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Email</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Body</th>
+          </tr>
+        </thead>
+        <tbody>
+       
+<%
+try
+{
+	Connection con=ConnectionProvider.getcon();
+	Statement stmt= con.createStatement();
+	ResultSet rs=stmt.executeQuery("select * from message");
+	while(rs.next())
+	{
+%>
+          <tr>
+            <td><%=rs.getString(1)%></td>
+            <td><%=rs.getString(2)%></td>
+            <td><%=rs.getString(3)%></td>
+            <td><%=rs.getString(4)%></td>
+          </tr>
+<%
+	}
+}
+catch(Exception e)
+{
+	System.out.println(e);
+}
+   %>  
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      
+   
+</body>
+</html>

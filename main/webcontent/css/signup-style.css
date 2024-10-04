@@ -1,0 +1,183 @@
+@charset "ISO-8859-1";
+/* Overall container styling */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #21cef3;
+}
+
+/* SignUp form styling */
+.signup {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 405px;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="number"],
+.signup input[type="password"],
+.signup select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.signup input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+     font-size: 27px;
+}
+
+.signup input[type="submit"]:hover {
+    background-color: #45a049;
+   
+}
+.signup h2
+{
+	margin-left:105px;
+	align-items: center;
+	font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Why sign up section styling */
+.whysign {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height:400px;
+}
+
+.whysign h1 {
+    color: #ff0000; /* Tomato color */
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.whysign h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.whysign p {
+	margin-top: 20px;
+	width: 300px;
+    font-size: 17px;
+    line-height: 1.5;
+    
+}
+.login
+{
+	align-content : center;
+	 background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height :400px;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="number"],
+.login input[type="password"],
+.login select {
+	align-content : center;
+    width: 100%;
+    padding: 10px;
+    height : 45px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login input[type="submit"] {
+    width: 100%;
+    height : 45px;
+    padding: 10px;
+    font-size : 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.login h2,a
+{
+	text-align: center;
+	
+}
+
+.whysignLogin 
+{
+	background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height:380px;
+}
+.whyforgotPassword
+{
+	background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px
+    
+}
+
+.whyforgotPassword p {
+	width: 300px;
+	margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    
+}
+
+.whyforgotPassword h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.whysignLogin h1 {
+    color: #ff0000; /* Tomato color */
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.whysignLogin h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.whysignLogin p {
+	margin-top: 20px;
+	width: 300px;
+    font-size: 17px;
+    line-height: 1.5;
+    
+}
+
+

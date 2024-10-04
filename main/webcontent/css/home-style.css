@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+.topnav {
+    background-color: #00246B; /* dark background color */
+    overflow: hidden; /* Ensure all content fits within the container */
+}
+
+/* Sticky positioning for the navigation bar */
+.topnav a
+{
+	text-decoration: none;
+	display: block;
+	margin-left: 10px;
+}
+.topnav .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+/* Change color of links on hover */
+.topnav a:hover {
+   /* background-color: #ffffff;  Darken background color on hover */
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* Style for the center-aligned heading */
+.topnav h1 {
+    color:#ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 14px 20px; /* Padding inside heading */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for icons within links */
+.topnav i {
+    margin-left: 5px; /* Add margin to the left of icons */
+}
+
+/* Body styling */
+body {
+    background-color: #ffffff; /* Light background color */
+    font-family: Arial, sans-serif; /* Default font family */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+   
+}
+
+/* Centered heading style */
+div {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px; /* Add space below the heading */
+    left:0;
+}
+
+.footer {
+    background-color: #00246B; /* Dark background color */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding top and bottom */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    margin-bottom:5px;
+    margin-right:15px;
+    left:0;
+    bottom: 0; /* Stick to the bottom of the viewport */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin for <p> */
+    font-size: 14px; /* Adjust font size */
+}
+
